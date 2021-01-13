@@ -1,8 +1,10 @@
 <div class="container">
   <div class="row col-xs-12">
     <input type="text" [(ngModel)]="filteredStatus" />
-    <br />
+    <br /><br />
     <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
+    <br /><br />
+    <h2>App Status: {{ appStatus | async }}</h2>
     <hr />
     <ul class="list-group">
       <li
